@@ -148,7 +148,9 @@ class ViewController: UIViewController, UITableViewDataSource, MCNearbyServiceAd
         case .connecting:
             print("Connecting \(peerID)...")
         }
-        updateTitle()
+        DispatchQueue.main.async {
+            self.updateTitle()
+        }
     }
     
     func session(_ session: MCSession, didStartReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, with progress: Progress) {
