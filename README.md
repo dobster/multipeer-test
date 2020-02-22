@@ -1,4 +1,4 @@
 # multipeer-test
 
-A very simple project to play with multipeer connectivity between iOS devices.
+Gist for experimenting with peer discovery using Multipeer Connectivity framework.
 
